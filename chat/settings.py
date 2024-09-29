@@ -126,10 +126,12 @@ USE_I18N = True
 USE_TZ = True
 
 
-STATIC_URL = '/bot/static/'
+STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
+    os.path.join(BASE_DIR, 'bot', 'static'),
 ]
+
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 STATICFILES_STORAGE ='whitenoise.storage.CompressedManifestStaticFilesStorage' # new
