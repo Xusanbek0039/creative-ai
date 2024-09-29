@@ -226,8 +226,8 @@ async def gemini_pro(bot,message,m):
 async def main():
     # Init args
     parser = argparse.ArgumentParser()
-    parser.add_argument("6075192710:AAFKAIHCcxQTXHtbIdwr7ch13mMHM3g55ZU", help="telegram token")
-    parser.add_argument("AIzaSyA9G7mUl8mXSZTWxZfQfTe50pssw6H", help="Google Gemini API key")
+    parser.add_argument("tg_token", help="6075192710:AAFKAIHCcxQTXHtbIdwr7ch13mMHM3g55ZU")
+    parser.add_argument("GOOGLE_GEMINI_KEY", help="AIzaSyCPGxzjaLpCkeRPXyenkxtbZsTAqaw3LCE")
     options = parser.parse_args()
     print("Arg parse done.")
 
