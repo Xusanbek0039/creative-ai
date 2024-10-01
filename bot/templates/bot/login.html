@@ -6,13 +6,23 @@
 {% block content %}
 
 {% load crispy_forms_tags %}
+<head>
+  <style>
+    h1{
+
+    }
+  </style>
+</head>
+<body>
+  
+
 <div class="container">
   <div class="row">
     <div class="col-4"></div>
     <div class="col-4">
 
         <div class="col-12 text-center">
-            <h1 class="display-6">Tizimga klrish</h1>
+            <h1>Tizimga kirish</h1>
         </div>
 
         {% crispy form %}
@@ -26,5 +36,5 @@
 </div>
 
 
-
+</body>
 {% endblock %}
